@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="shortcut icon" type="image/png" href="Images/Favicon.png"/>
+</head>
+<body>
+
+<div class="header sticky">
+	<h1>Delicious</h1>
+	<span class="open" onclick="openMenu()">&#9776;</span>
+</div>
+
+<div id="myMenu" class="menu"> 
+	<a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+<div class="menu-content">
+ 	<a href="index.html">Home</a>
+	<br>
+	<a href="Page2.html">About<span class="ribbon">Look!</span></a>
+	<br>
+ 	<a href="Page3.html">Gallery<span class="ribbon">New!</span></a>
+</div>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Images/1.jpg" style="width="460" height="345">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Images/2.jpg" style="width="460" height="345">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Images/3.jpg" style="width="460" height="345">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Images/4.jpg" style="width="460" height="345">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Images/5.jpg" style="width="460" height="345">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Images/6.jpg" style="width="460" height="345">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ramen">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fried Noodles">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Uncooked Noodles">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Spaghetti">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ramen">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Images/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Egg Noodles">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
